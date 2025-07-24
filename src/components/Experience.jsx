@@ -21,7 +21,7 @@ function Experience() {
                     <h3 className="font-semibold text-lg">Aero Contractors</h3>
                     <p className="text-sm">Intern</p>
                 </div>
-                <div className="text-sm">2024 (July) · 2024 (October)</div>  
+                <div className="text-sm">2025 (July) · Now</div>  
             </div>
 
             <div className="flex justify-between">
