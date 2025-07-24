@@ -4,9 +4,9 @@ import React from "react";
 function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="w-full h-20 flex items-center justify-center">
-        <div className="flex gap-8 text-lg font-semibold">
-          <Link to="/">
+      <div className="w-full h-20 flex items-center justify-center px-4 sm:px-6 md:px-8">
+        <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-sm sm:text-base font-semibold">
+          <Link to="/" className="hover:text-blue-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={24}
@@ -19,7 +19,7 @@ function Navbar() {
               ></path>
             </svg>
           </Link>
-          <Link to="/experience">
+          <Link to="/experience" className="hover:text-blue-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={24}
@@ -32,7 +32,7 @@ function Navbar() {
               ></path>
             </svg>
           </Link>
-          <Link to="/projects">
+          <Link to="/projects" className="hover:text-blue-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={24}
@@ -45,7 +45,7 @@ function Navbar() {
               ></path>
             </svg>
           </Link>
-          <Link to="/contact">
+          <Link to="/contact" className="hover:text-blue-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={24}

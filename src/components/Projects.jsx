@@ -9,21 +9,22 @@ function Projects() {
       description:
         "A simple recipebook web-app which makes use of spoonacular API to display recipes.",
       gihublink: "https://github.com/boxedcrusader/recipe",
-      link: "https://recipe-book-2.vercel.app/"
+      link: "https://recipe-book-phi-seven.vercel.app/"
     },
     {
       url: "/images/ecoshop.png",
       title: "EcoShop",
       description:
         "An e-commerce web-app that allows users to buy and sell eco-friendly products.",
-      githublink: "",
+      githublink: "https://github.com/boxedcrusader/Ecoshop",
+      link: "https://ecoshop-pied.vercel.app/"
     },
   ];
 
   return (
-    <div className="flex flex-col items-center py-12 w-full">
-      <h3 className="text-5xl mb-8">Projects</h3>
-      <div className="flex flex-row gap-8 justify-center w-full">
+    <div className="flex flex-col items-center py-12 px-4 sm:px-6 md:px-8 w-full">
+      <h3 className="text-3xl sm:text-4xl md:text-5xl mb-8 text-center">Projects</h3>
+      <div className="flex flex-col sm:flex-row flex-wrap gap-8 justify-center items-center w-full">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
