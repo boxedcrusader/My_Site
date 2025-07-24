@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className='flex flex-col items-center py-12 w-full'>
+    <div className='flex flex-col items-center py-12 w-full mb-30'>
         <div className='w-24 h-24 md:w-32 md:h-32 mb-6'>
             <img src="/images/profile.jpg" alt="profile" className='w-full h-full object-cover rounded-full'/>
         </div>
