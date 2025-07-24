@@ -1,15 +1,70 @@
-import React from 'react';
-import { Icon } from "@iconify/react";
+import React from "react";
 
 function ProjectCard({ project }) {
   return (
-    <div className='w-96 h-auto bg-white border-2 border-gray-300 rounded-lg p-6 m-4 flex flex-col items-center'>
-      <img src={project.url} alt={project.title} className='mb-4 rounded-lg h-50 w-80'/>
-      <h3 className='text-2xl font-semibold mt-2 underline decoration-gray-500'>{project.title}</h3>
-      <p className='text-lg mt-2'>{project.description}</p>
-      <a href={project.link}>
-        <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24"><path fill="currentColor" fillRule="evenodd" d="M5 1a4 4 0 0 0-4 4v14a4 4 0 0 0 4 4h14a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4zm1.815 5.11a8 8 0 0 1 5.182-1.903a7.99 7.99 0 0 1 2.531 15.572c-.405.077-.535-.159-.535-.372v-2.212a1.9 1.9 0 0 0-.546-1.473c1.78-.197 3.648-.871 3.648-3.942a3.1 3.1 0 0 0-.822-2.146a2.87 2.87 0 0 0-.08-2.114s-.666-.214-2.194.82a7.56 7.56 0 0 0-4.002 0C8.472 7.306 7.8 7.52 7.8 7.52a2.87 2.87 0 0 0-.078 2.114a3.1 3.1 0 0 0-.823 2.144c0 3.063 1.866 3.748 3.64 3.95a1.7 1.7 0 0 0-.508 1.065a1.7 1.7 0 0 1-2.325-.664a1.68 1.68 0 0 0-1.224-.823s-.78-.01-.054.487c.426.271.74.686.887 1.168c0 0 .459 1.535 2.682 1.053c.003.504.002.929 0 1.19v.2c0 .21-.126.445-.525.375A7.99 7.99 0 0 1 6.815 6.11" clipRule="evenodd"></path></svg>
-      </a>
+    <div className="w-96 bg-white border border-gray-300 rounded-xl p-6 m-4 flex flex-col items-center shadow-md hover:shadow-xl transition-shadow duration-300">
+      <img
+        src={project.url}
+        alt={project.title}
+        className="mb-4 rounded-lg h-48 w-80 object-cover"
+      />
+
+      <h3 className="text-2xl font-semibold mt-2 underline decoration-gray-500 text-center">
+        {project.title}
+      </h3>
+
+      <p className="text-gray-700 mt-2 text-center">{project.description}</p>
+
+      <div className="flex gap-6 mt-4">
+        {/* GitHub link */}
+        <a
+          href={project.githublink}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="View source on GitHub"
+          className="text-gray-600 hover:text-black transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={28}
+            height={28}
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M12 2a10 10 0 00-3.162 19.493c.5.092.683-.217.683-.482v-1.684c-2.782.604-3.369-1.34-3.369-1.34-.454-1.152-1.11-1.46-1.11-1.46-.909-.621.07-.609.07-.609 1.005.071 1.534 1.033 1.534 1.033.892 1.527 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.946 0-1.092.39-1.986 1.029-2.684-.103-.253-.446-1.27.098-2.646 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.706.115 2.504.337 1.91-1.295 2.748-1.026 2.748-1.026.545 1.376.202 2.393.1 2.646.64.698 1.027 1.592 1.027 2.684 0 3.846-2.338 4.69-4.566 4.938.36.309.682.919.682 1.852v2.747c0 .268.18.578.688.48A10.001 10.001 0 0012 2z"
+            />
+          </svg>
+        </a>
+
+        {/* Live project link */}
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Visit live site"
+          className="text-gray-600 hover:text-black transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={28}
+            height={28}
+            viewBox="0 0 48 48"
+          >
+            <g fill="none" stroke="currentColor" strokeWidth={3}>
+              <path
+                strokeLinejoin="round"
+                d="M3 24a21 21 0 1 0 42 0a21 21 0 1 0-42 0"
+              />
+              <path
+                strokeLinejoin="round"
+                d="M15 24a9 21 0 1 1 18 0a9 21 0 1 1-18 0"
+              />
+              <path strokeLinecap="round" d="M4.5 31h39m-39-14h39" />
+            </g>
+          </svg>
+        </a>
+      </div>
     </div>
   );
 }

@@ -3,8 +3,8 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav>
-      <div className="w-full h-20 flex items-center justify-center bg-white shadow-md">
+    <nav className="sticky top-0 z-50 bg-white shadow-md">
+      <div className="w-full h-20 flex items-center justify-center">
         <div className="flex gap-8 text-lg font-semibold">
           <Link to="/">
             <svg
