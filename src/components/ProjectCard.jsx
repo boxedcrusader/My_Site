@@ -16,7 +16,7 @@ function ProjectCard({ project }) {
       <p className="text-gray-700 mt-2 text-center">{project.description}</p>
 
       <div className="flex gap-6 mt-4">
-        {/* GitHub link */}
+
         <a
           href={project.githublink}
           target="_blank"
@@ -37,7 +37,6 @@ function ProjectCard({ project }) {
           </svg>
         </a>
 
-        {/* Live project link */}
         <a
           href={project.link}
           target="_blank"

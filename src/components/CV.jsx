@@ -5,7 +5,7 @@ function CV() {
     <div className="mt-9 flex flex-row gap-4 sm:gap-6 flex-wrap justify-center">
       <h3 className="text-5xl">Check out my CV</h3>
       <a
-        href="https://drive.google.com/file/d/1A_6tbo6JePI-HsB7K7JNmnlZGTTkKJog/view?usp=drivesdk"
+        href="https://drive.google.com/file/d/1A_6tbo6JePI-HsB7K7JNmnlZGTTkKJog/view?usp=sharing"
         className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gray-100 hover:bg-gray-200 transition"
       >
         <svg
