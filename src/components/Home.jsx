@@ -6,7 +6,7 @@ function Home() {
 
       <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mb-6">
         <img
-          src="/images/profile.jpg"
+          src="/images/me.jpg"
           alt="profile"
           className="w-full h-full object-cover rounded-full"
         />

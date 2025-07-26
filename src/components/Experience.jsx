@@ -6,7 +6,7 @@ function Experience() {
 
       <div className="text-center mb-10">
         <h3 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
-          Work Experience & Stack
+          Work Experience
         </h3>
       </div>
 
