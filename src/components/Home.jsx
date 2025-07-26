@@ -14,7 +14,7 @@ function Home() {
 
       <div className="text-center">
         <h1 className="text-3xl sm:text-5xl md:text-8xl font-semibold">Hello there,</h1>
-        <h2 className="text-lg sm:text-2xl md:text-5xl mt-2">I am John Doe.</h2>
+        <h2 className="text-lg sm:text-2xl md:text-5xl mt-2">I am Bashir Muhammed.</h2>
       </div>
 
       <div className="text-center mt-4 max-w-xl">
