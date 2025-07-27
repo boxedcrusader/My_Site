@@ -100,7 +100,7 @@ function Stack() {
     },
   ];
   return (
-    <div className="flex flex-col items-center py-12 w-full px-4 sm:px-6 md:px-8 mb-auto">
+    <div className="flex flex-col items-center py-12 w-full px-4 sm:px-6 md:px-8 mb-100">
       <h3 className="text-5xl underline underline-offset-8 mb-6">Tech Stack</h3>
       <div className="flex flex-wrap justify-center gap-6">
         {stacks.map((stack, index) => (
