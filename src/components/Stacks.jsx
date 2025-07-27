@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Stack() {
+  const [hovered, setHovered] = useState(false);
+
   const stacks = [
     {
       name: "JavaScript",
@@ -8,7 +10,7 @@ function Stack() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={640}
-          height={512}
+          height={100}
           viewBox="0 0 24 24"
         >
           <path
@@ -24,7 +26,7 @@ function Stack() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={640}
-          height={512}
+          height={100}
           viewBox="0 0 24 24"
         >
           <path
@@ -40,7 +42,7 @@ function Stack() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={640}
-          height={512}
+          height={100}
           viewBox="0 0 24 24"
         >
           <path
@@ -56,7 +58,7 @@ function Stack() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={640}
-          height={512}
+          height={100}
           viewBox="0 0 24 24"
         >
           <path
@@ -72,7 +74,7 @@ function Stack() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={640}
-          height={512}
+          height={100}
           viewBox="0 0 640 512"
         >
           <path
@@ -88,7 +90,7 @@ function Stack() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={640}
-          height={512}
+          height={100}
           viewBox="0 0 24 24"
         >
           <path
@@ -104,7 +106,7 @@ function Stack() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={640}
-          height={512}
+          height={100}
           viewBox="0 0 24 24"
         >
           <g
@@ -126,7 +128,7 @@ function Stack() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={640}
-          height={512}
+          height={100}
           viewBox="0 0 24 24"
         >
           <g
@@ -143,12 +145,18 @@ function Stack() {
       ),
     },
   ];
+
   return (
     <div className="flex flex-col items-center py-12 w-full px-4 sm:px-6 md:px-8">
       <h3 className="text-5xl underline underline-offset-8 mb-6">Tech Stack</h3>
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-6 {}">
         {stacks.map((stack, index) => (
-          <div key={index} className="flex flex-col items-center text-black">
+          <div
+            key={index}
+            onMouseOver={() => setHovered(index)}
+            onMouseOut={() => setHovered(null)}
+            className={`flex flex-col items-center text-black p-4 rounded transition-all duration-100 ${hovered === index ? "border border-black" : ""}`}
+          >
             <div className="w-30 h-30 flex items-center justify-center">
               {stack.svg}
             </div>
